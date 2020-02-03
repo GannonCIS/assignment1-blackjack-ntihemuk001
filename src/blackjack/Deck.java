@@ -18,7 +18,7 @@ public class Deck {
     
     public Deck(){ //this is a constructor//
         initDeck();
-        //shuffle();
+        shuffle();
         
     }
     
