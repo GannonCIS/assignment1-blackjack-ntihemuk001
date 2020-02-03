@@ -18,7 +18,7 @@ public class Deck {
     
     public Deck(){ //this is a constructor//
         initDeck();
-        shuffle();
+        //shuffle();
         
     }
     
@@ -49,8 +49,13 @@ public class Deck {
     }
     
     public Card dealCard(){ //a class is A DATATYBE FOR AN OBJECT
-        
-        return null; //do not forget to change this!!!!!!!!!!!!!!!!!!!!!!
+        Card next = myCards[nextCard];
+        nextCard++;
+        if(nextCard > 51){
+            shuffle();
+            nextCard = 0;
+        }
+        return next; 
         
     } 
     
