@@ -13,7 +13,7 @@ public class Dealer {
     
   public void dealOpeningHand(){
       
-  } 
+  }
   
   public void takePlayerTurns(){
       
