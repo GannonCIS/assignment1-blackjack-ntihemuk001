@@ -13,6 +13,7 @@ public class Player {
     private Hand myHand = new Hand();
     private String name;
     
+    //fixed extra "}"
     public Player(String name){
         this.name = name;
     }
