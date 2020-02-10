@@ -58,9 +58,16 @@ public class Dealer {
   }
   
   public void declareWinners(){
-      
-      
+      for(Player currPlayer : myPlayers){
+          if(currPlayer.getMyHand().getScore() > 21){
+              System.out.println( currPlayer.getName() + " SORRY NEXT TIME");
+          }else if(currPlayer.getMyHand().getNumofCards() == 5 && 
+                  dealerHand.getScore() < 21 && dealerHand.getNumofCards() < 5);
+          System.out.println(currPlayer.getName() + " has finally won!!!");
+          
+      }
   }
+  
   
   
   
